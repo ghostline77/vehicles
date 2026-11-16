@@ -8,8 +8,8 @@ description = "Native Cyberpunk 2077 vehicle catalogue, comparisons and GPU prev
 [dependencies]
 anyhow = "1"
 clap = { version = "4", features = ["derive"] }
-ghostline-red = { path = "../ghostline-red" }
-ghostline-renderer = { path = "../renderer" }
+ghostline-red = { git = "https://github.com/ghostline77/ghostline-red" }
+ghostline-renderer = { git = "https://github.com/ghostline77/renderer" }
 pollster = "0.4"
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"

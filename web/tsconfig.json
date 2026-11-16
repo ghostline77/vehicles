@@ -1,1 +1,9 @@
-{"extends":"../../ui-core/tsconfig.json","compilerOptions":{"allowJs":true,"checkJs":false},"include":["src"]}
+{
+  "extends": "@ghostline/ui-core/tsconfig.json",
+  "compilerOptions": {
+    "allowJs": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
+  },
+  "include": ["src"]
+}

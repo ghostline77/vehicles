@@ -2,8 +2,7 @@
 
 ## Generate
 
-Use Rust 1.92+ and keep the sibling native crates available. Install the parent
-JavaScript workspace with `npm ci` before a fresh build. Run from this repository.
+Use Rust 1.92+ and Node.js 20+. Run from this repository.
 Replace `YOUR_GAME_VERSION` with the installed game's version label and supply
 its complete TweakDB cache. `--tweak-names` is optional.
 

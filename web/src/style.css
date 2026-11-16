@@ -1,93 +1,28 @@
-@layer theme, base, app-layout, components, utilities;
-@import "../style.css" layer(app-layout);
-@import "@ghostline/ui-core/styles.css";
-@import "@ghostline/ui-core/controller.css";
-.gl-app-shell > main {
-  width: 100%;
-  max-width: 1500px;
-  margin: 0 auto;
-  padding: 32px 24px 48px;
-}
-.gl-app-shell h1 {
-  font-size: clamp(28px, 3.5vw, 42px);
-  margin: 0 0 24px;
-}
-.gl-app-shell :where(.card, .card h2) {
-  color: var(--color-foreground);
-}
-.gl-app-shell .card h2 a {
-  color: var(--color-foreground);
-}
-.gl-app-shell .eyebrow {
-  color: var(--color-muted);
-  font-size: 11px;
-}
-.gl-app-shell form {
-  gap: 16px;
-}
-.gl-app-shell form label {
-  min-width: 0;
-}
-.gl-app-shell form label:first-child {
-  min-width: 240px;
-}
-.gl-app-shell form .check {
-  gap: 8px;
-  padding: 0;
-  min-height: 36px;
-}
-.gl-app-shell .card .body {
-  padding: 20px;
-}
-.gl-app-shell :where(.views, .card .actions) {
-  gap: 8px;
-}
-.gl-app-shell .visual {
-  background: radial-gradient(ellipse, #30382e, var(--color-background));
-}
-.gl-app-shell .body > select {
-  width: 100%;
-}
-.gl-app-shell :where(#comparison, #detail, .source-notes) {
-  padding: 20px;
-}
-.gl-app-shell .section-title {
-  flex-wrap: wrap;
-}
-.gl-app-shell .grid {
-  grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
-  gap: 20px;
-}
-@media (max-width: 600px) {
-  .gl-app-shell > main {
-    padding: 24px 16px 40px;
+@import "@ghostline/ui-core/tailwind.css";
+@source "./**/*.{ts,tsx}";
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+    margin: 0;
   }
-  .gl-app-shell form {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  body {
+    background: var(--color-background);
   }
-  .gl-app-shell form label:first-child,
-  .gl-app-shell form .check {
-    grid-column: 1/-1;
-    min-width: 0;
+  button,
+  input,
+  textarea,
+  select {
+    font: inherit;
   }
-  .gl-app-shell .card .body {
-    padding: 16px;
+  summary {
+    cursor: pointer;
   }
-  .gl-app-shell :where(#comparison, #detail, .source-notes) {
-    padding: 16px;
+  textarea:focus-visible,
+  svg [tabindex]:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
   }
-  .gl-app-shell #detail .visual {
-    height: 280px;
-  }
-}
-.gl-root > main {
-  flex: 1;
-}
-.gl-root > header {
-  text-align: left;
-}
-.check .gl-input {
-  width: auto;
-  padding: 0;
 }

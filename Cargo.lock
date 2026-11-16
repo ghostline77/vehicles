@@ -496,6 +496,7 @@ dependencies = [
 [[package]]
 name = "ghostline-red"
 version = "0.1.0"
+source = "git+https://github.com/ghostline77/ghostline-red#c278de6ef37870239d2cbcb79033bf758e08ea29"
 dependencies = [
  "aho-corasick",
  "anyhow",
@@ -523,6 +524,7 @@ dependencies = [
 [[package]]
 name = "ghostline-renderer"
 version = "0.1.0"
+source = "git+https://github.com/ghostline77/renderer#50744c9b1b6ecb1947c127717684f0b9c6473e0b"
 dependencies = [
  "anyhow",
  "bytemuck",
@@ -1635,4 +1637,3 @@ name = "zmij"
 version = "1.0.23"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "29666d0abbfad1e3dc4dcf6144730dd3a3ab225bbbdac83319345b1b44ccfc1b"
-
